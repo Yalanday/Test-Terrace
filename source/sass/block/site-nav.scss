@@ -1,0 +1,51 @@
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  align-items: center;
+}
+
+.site-nav__list {
+  max-width: 600px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+
+.site-nav__list-user {
+  gap: 30px;
+}
+
+
+.site-nav__link {
+  color: #151414;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
+}
+
+.site-nav__link--phone {
+  display: flex;
+  gap: 9px;
+}
+
+.site-nav__link--phone::before {
+  content: "";
+  display: block;
+
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/phone-icon.png");
+}

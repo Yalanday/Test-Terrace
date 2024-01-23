@@ -1,0 +1,29 @@
+.button {
+  min-width: 172px;
+  max-width: 226px;
+  padding: 13px 31px;
+  border: none;
+  font-family: inherit;
+  color: $default-white;
+  background-color: #c3002f;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(222, 72, 72);
+}
+
+.button:active {
+  background-color:  rgb(252, 5, 5);
+}
+
+.button--slider {
+  font-size: $font-medium;
+  width: 226px;
+  margin: -54px auto 0;
+  padding: 21px 40px;
+}
