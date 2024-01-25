@@ -9,7 +9,9 @@
 }
 
 .promo__title {
+  width: 23vw;
   width: 600px;
+  min-width: 23vw;
   margin: 0;
   margin-bottom: 24px;
   color: $default-white;
@@ -23,6 +25,7 @@
   margin: 0;
   margin-bottom: 50px;
   width: 600px;
+  min-width: 23vw;
   color: $default-white;
   font-size: 28px;
   font-style: normal;

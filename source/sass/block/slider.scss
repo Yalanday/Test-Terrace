@@ -1,6 +1,25 @@
 #slider-wrapper {
-  width: 1530px;
+  // width: 56vw;
+  // max-width: 1530px;
+  margin: 0 auto;
   position: relative;
+  width: 750px;
+}
+
+@media (min-width: 1400px) {
+  #slider-wrapper {
+    margin: 0 auto;
+    width: 1110px;
+
+  }
+}
+
+@media (min-width: 1920px) {
+  #slider-wrapper {
+    margin: 0 auto;
+    width: 1530px;
+
+  }
 }
 
 #slider {
