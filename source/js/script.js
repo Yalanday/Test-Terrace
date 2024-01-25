@@ -65,7 +65,6 @@ const GAP = 30;
 const WIDTH = 360;
 
 const slider = document.getElementById("slider");
-const content = document.getElementById("content");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
