@@ -4,9 +4,17 @@
   flex-shrink: 0;
   background-image: url("../img/promo-image.jpg");
   background-size: cover;
-  padding: 175px 130px;
+  padding: 100px 130px;
   margin-bottom: 100px;
 }
+
+@media (min-width: 1280px) {
+  .promo {
+    padding-top: 175px;
+  }
+}
+
+
 
 .promo__title {
   width: 23vw;
