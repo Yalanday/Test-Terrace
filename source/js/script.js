@@ -1,5 +1,4 @@
 'use strict'
-
 // Открытие-закрытие модального окна
 
 const openModalButtons = document.querySelectorAll(".modal-open-button-js");
@@ -36,7 +35,6 @@ document.addEventListener('keydown', event => {
 modalWindow.addEventListener('click', closeModal);
 form.addEventListener('click', evt => evt.stopPropagation());
 
-
 // Валидация формы
 
 const nameInput = document.getElementById("name-input");
@@ -61,7 +59,6 @@ phoneInput.addEventListener('mouseout', clearPhoneInput);
 phoneInput.addEventListener('focus', phoneInputHover);
 phoneInput.addEventListener('blur', clearPhoneInput);
 
-
 // Слайдер
 
 const GAP = 30;
@@ -72,18 +69,6 @@ const content = document.getElementById("content");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
-prev.disabled = true;
-
-next.addEventListener("click", () => {
-  slider.scrollBy(WIDTH + GAP, 0);
-  if (slider.scrollLeft > WIDTH * 2) next.disabled = true;
-  if (slider.scrollLeft < WIDTH * 2) prev.disabled = false;
-});
-
-
-prev.addEventListener("click", () => {
-  slider.scrollBy(-(WIDTH + GAP), 0);
-  if (slider.scrollLeft == 0) prev.disabled = true;
-  if (slider.scrollLeft < WIDTH * 2) next.disabled = false;
-});
+next.addEventListener("click", () => slider.scrollBy(WIDTH + GAP, 0));
+prev.addEventListener("click", () => slider.scrollBy(-(WIDTH + GAP), 0));
 
